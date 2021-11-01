@@ -9,7 +9,7 @@ export default function NavBar() {
       <ul className={s.ulNav}>
         
           <NavLink className={s.text} exact to="/">
-            About
+            Sobre nosotros
           </NavLink>
           <NavLink className={s.text} exact to="/">
             Home
@@ -17,8 +17,6 @@ export default function NavBar() {
           <NavLink className={s.text} exact to="/">
            Mi perfil
           </NavLink>
-        
-    
       </ul>
     </div>
   );
