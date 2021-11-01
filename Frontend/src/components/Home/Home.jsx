@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div >
         <Navbar/>
-        <p>Hola este es el home</p>
+        <p>Escuela de verano</p>
           
     </div>
   );
