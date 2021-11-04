@@ -29,7 +29,7 @@ async function getParam(req, res) {
     let chico;
 
     const chango = await Alumnos.findAll();
-    chico = chango.find((c) => c.DNI === idA)
+    chico = chango.find((c) => c.clienteNro === idA)
 
     if(chico){
       return res.status(200).json(chico)
@@ -46,12 +46,13 @@ async function getParam(req, res) {
 
 async function postAlumnos(req, res) {
   try {
-    const { name, years, DNI } = req.body;
+    const { name, years, DNI, clienteNro } = req.body;
 
     const escuela = await Alumnos.create({
       name,
       DNI,
       years,
+      clienteNro
     });
 
     res.status(200).json({
