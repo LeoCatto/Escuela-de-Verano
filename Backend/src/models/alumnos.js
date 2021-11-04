@@ -14,23 +14,26 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    clienteNro:{
+      type: DataTypes.STRING,
+      allowNull:false
+    },
     years:{
       type: DataTypes.STRING
     },
     DNI:{
       type:DataTypes.STRING,
       allowNull:false
+    },
+    mail:{
+      type: DataTypes.STRING
+    },
+    quincena:{
+        type: DataTypes.STRING
+    },
+    tiempo:{
+        type: DataTypes.DATE
     }
-    // ,
-    // mail:{
-    //   type: DataTypes.STRING
-    // },
-    // quincena:{
-    //     type: DataTypes.STRING
-    // },
-    // tiempo:{
-    //     type: DataTypes.DATE
-    // }
 
   });
 }
