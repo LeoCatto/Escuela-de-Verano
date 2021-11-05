@@ -29,7 +29,7 @@ async function getParam(req, res) {
     let chico;
 
     const chango = await Alumnos.findAll();
-    chico = chango.find((c) => c.clienteNro === idA)
+    chico = chango.find((c) => c.clienteNro === idA || c.DNI === idA)
 
     if(chico){
       return res.status(200).json(chico)
