@@ -1,23 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import s from "./Navbar.module.css";
+import "./Navbar.css"
 
 
 export default function NavBar() {
   return (
-    <div className={s.navBar}>
-      <ul className={s.ulNav}>
-        
-          <NavLink className={s.text} exact to="/">
+    <div className='navbar'>
+          <NavLink className="text" exact to="/">
             Sobre nosotros
           </NavLink>
-          <NavLink className={s.text} exact to="/">
+          <NavLink className='text' exact to="/">
             Home
           </NavLink>
-          <NavLink className={s.text} exact to="/">
+          <NavLink className='text' exact to="/miperfil">
            Mi perfil
           </NavLink>
-      </ul>
     </div>
   );
 }

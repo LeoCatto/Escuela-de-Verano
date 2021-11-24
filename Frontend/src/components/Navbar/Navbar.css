@@ -1,0 +1,26 @@
+.navBar {
+
+    display: inline-block;
+    display: flex;
+    margin-block-start: 100px;
+    
+  }
+  
+  .text {
+    color: linear-gradient(90deg,#FAB705,#0A0A0A);;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.103);
+    margin-left: 270px;
+    margin-top: 20px;
+    display: inline-block;
+    background-color: var(arial);
+    box-shadow: 5px 6px 30px 10px rgba(240, 241, 240, 0.952);
+    padding: 10px 45px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .text:hover{
+    color:rgb(0, 47, 255);
+  }
+  
+  
